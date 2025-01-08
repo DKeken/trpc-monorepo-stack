@@ -15,34 +15,6 @@ A high-performance, type-safe monorepo template engineered for building scalable
 
 </div>
 
-## 🏗 Architecture Overview
-
-Our architecture follows a modern, scalable approach with clear separation of concerns:
-
-```mermaid
-graph TD
-    A[Client Layer] --> B[API Layer]
-    B --> C[Service Layer]
-    C --> D[Data Layer]
-
-    subgraph "Frontend (Next.js)"
-    A
-    end
-
-    subgraph "tRPC Server"
-    B
-    end
-
-    subgraph "Business Logic"
-    C
-    end
-
-    subgraph "Storage"
-    D --> E[(PostgreSQL)]
-    D --> F[(KeyDB/Redis)]
-    end
-```
-
 ## 🚀 Tech Stack
 
 ### Frontend (apps/web)
