@@ -2,21 +2,16 @@
 
 <div align="center">
 
-![Architecture Overview](https://via.placeholder.com/800x400.png?text=Architecture+Overview)
-
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3.3-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-15.0.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![tRPC](https://img.shields.io/badge/tRPC-v11.0-blue?style=for-the-badge&logo=trpc)](https://trpc.io/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Bun](https://img.shields.io/badge/Bun-1.0.25-black?style=for-the-badge&logo=bun)](https://bun.sh/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5.4-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.1.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![tRPC](https://img.shields.io/badge/tRPC-11.0.0--rc.688-blue?style=for-the-badge&logo=trpc)](https://trpc.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Bun](https://img.shields.io/badge/Bun-1.1.15-black?style=for-the-badge&logo=bun)](https://bun.sh/)
 [![KeyDB](https://img.shields.io/badge/KeyDB-6.3.4-DC382D?style=for-the-badge&logo=redis)](https://docs.keydb.dev/)
 [![Drizzle](https://img.shields.io/badge/Drizzle-0.19.0-000000?style=for-the-badge&logo=drizzle)](https://drizzle.dev/)
-[![Turborepo](https://img.shields.io/badge/Turborepo-1.0.0-000000?style=for-the-badge&logo=turborepo)](https://turbo.build/)
-
+[![Turborepo](https://img.shields.io/badge/Turborepo-2.3.3-000000?style=for-the-badge&logo=turborepo)](https://turbo.build/)
 
 A high-performance, type-safe monorepo template engineered for building scalable web applications with modern best practices.
-
-[Documentation](#documentation) • [Getting Started](#getting-started) • [Architecture](#architecture) • [Features](#features)
 
 </div>
 
@@ -122,7 +117,7 @@ graph TD
 1. **Prerequisites**
 
    ```bash
-   bun --version # >= 1.0.25
+   bun --version # >= 1.1.15
    node --version # >= 18.0.0
    ```
 
@@ -150,13 +145,6 @@ graph TD
    # Start development servers
    pnpm dev
    ```
-
-## 📚 Documentation
-
-- [Setup Guide](docs/setup.md)
-- [Architecture Overview](docs/architecture.md)
-- [Development Guide](docs/development.md)
-- [Deployment Guide](docs/deployment.md)
 
 ## 🤝 Contributing
 
