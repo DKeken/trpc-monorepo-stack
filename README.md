@@ -60,11 +60,3 @@ Feel free to open issues, propose new features, or submit pull requests.
 ## License
 
 [MIT](./LICENSE)
-
-```
-
-```
-
-```
-
-```
