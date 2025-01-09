@@ -1,10 +1,10 @@
 import { z } from "zod";
-import { t } from "../trpc";
+import { protectedProcedure, t } from "../trpc";
 import { channelService } from "../services/channels";
 import { redis } from "../services/redis";
 
 export const channelsRouter = t.router({
-  list: t.procedure.query(() => {
+  list: protectedProcedure.query(async (ctx) => {
     return channelService.listChannels();
   }),
 

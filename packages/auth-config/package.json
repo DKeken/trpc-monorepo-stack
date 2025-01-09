@@ -1,0 +1,11 @@
+{
+  "name": "@app/auth-config",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@reown/appkit-siwe": "*",
+    "next-auth": "5.0.0-beta.25"
+  }
+}

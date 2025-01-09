@@ -7,6 +7,10 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
+import { Spinner } from "@/components/ui/spinner";
+import dynamic from "next/dynamic";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useAccount } from "wagmi";
 
 export default function UserPage() {
   const { data: channels, refetch } = trpc.channels.list.useQuery();
@@ -14,6 +18,8 @@ export default function UserPage() {
   const { mutateAsync: isTyping } = trpc.channels.isTyping.useMutation();
   const { data } = trpc.channels.randomNumber.useSubscription();
   const { theme } = useTheme();
+  const { data: user } = trpc.users.me.useQuery();
+  const { address } = useAccount();
 
   const [currentChannel, setCurrentChannel] = useState<string | null>(null);
   const [channelName, setChannelName] = useState("");
@@ -52,6 +58,11 @@ export default function UserPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <h1>{data}</h1>
+      <div className="flex flex-col gap-2">
+        <p>{user?.name}</p>
+        <p>{address}</p>
+      </div>
+      <ConnectButton label="Connect Wallet 🔗" />
       <div className="p-6 max-w-2xl mx-auto">
         <Card className="border-border">
           <CardHeader>
@@ -78,7 +89,6 @@ export default function UserPage() {
             </div>
           </CardContent>
         </Card>
-
         <div className="space-y-4 mt-6">
           {currentChannel && (
             <Card className="border-border">

@@ -15,6 +15,20 @@
       "when": 1736359828685,
       "tag": "0001_wild_layla_miller",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1736387709661,
+      "tag": "0002_polite_sebastian_shaw",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1736388192509,
+      "tag": "0003_noisy_nocturne",
+      "breakpoints": true
     }
   ]
 }
